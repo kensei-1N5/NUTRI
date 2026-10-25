@@ -71,3 +71,10 @@ Accueil → consulter la journée → ajouter un aliment → choisir quantité e
 
 ## Addendum V1.1.0
 Sauvegarde externe chiffrée AES-GCM 256 bits avec dérivation PBKDF2 SHA-256 310000 itérations et sels/IV aléatoires. Format `.nutri` JSON versionné. Restauration transactionnelle multi-stores après validation. Détection de quota et demande de persistance si disponible. Stockage local iOS/WebKit non garanti ; sauvegarde manuelle obligatoire.
+
+
+## Livraison V1.2.0
+- Store `recipes` (migration IndexedDB v2), `{id,name,servings,ingredients[]}`.
+- Chaque ingrédient contient un instantané des macros par 100 g et sa quantité.
+- Ajout d’une portion dans `entries`, normalisée sur 100 g pour réutiliser le calcul existant.
+- Sauvegarde version 2, restauration version 1 avec `recipes=[]`.
