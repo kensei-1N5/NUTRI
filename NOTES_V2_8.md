@@ -1,0 +1,1 @@
+V2.8.0 : recherche alimentaire depuis + de chaque repas, catalogue générique indicatif hors ligne, aliments personnels, résultats Open Food Facts en ligne, sélection de quantité et ajout direct au repas. Les valeurs génériques sont indicatives. Base IndexedDB inchangée.
